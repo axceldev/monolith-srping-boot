@@ -1,0 +1,67 @@
+{"properties": [
+  {
+    "name": "typeMismatch.usuario.account",
+    "type": "java.lang.String",
+    "description": "A description for 'typeMismatch.usuario.account'"
+  },
+  {
+    "name": "typeMismatch.java.lang.Integer",
+    "type": "java.lang.String",
+    "description": "A description for 'typeMismatch.java.lang.Integer'"
+  },
+  {
+    "name": "Requerido.usuario.lastName",
+    "type": "java.lang.String",
+    "description": "A description for 'Requerido.usuario.lastName'"
+  },
+  {
+    "name": "IdentificadorRegex.usuario.identification",
+    "type": "java.lang.String",
+    "description": "A description for 'IdentificadorRegex.usuario.identification'"
+  },
+  {
+    "name": "requerido.usuario.name",
+    "type": "java.lang.String",
+    "description": "A description for 'requerido.usuario.name'"
+  },
+  {
+    "name": "pattern.usuario.identification",
+    "type": "java.lang.String",
+    "description": "A description for 'pattern.usuario.identification'"
+  },
+  {
+    "name": "Email.usuario.email",
+    "type": "java.lang.String",
+    "description": "A description for 'Email.usuario.email'"
+  },
+  {
+    "name": "NotEmpty.usuario.username",
+    "type": "java.lang.String",
+    "description": "A description for 'NotEmpty.usuario.username'"
+  },
+  {
+    "name": "NotEmpty.usuario.name",
+    "type": "java.lang.String",
+    "description": "A description for 'NotEmpty.usuario.name'"
+  },
+  {
+    "name": "typeMismatch.java.Util.Date",
+    "type": "java.lang.String",
+    "description": "A description for 'typeMismatch.java.Util.Date'"
+  },
+  {
+    "name": "typeMismatch.java.util.Date",
+    "type": "java.lang.String",
+    "description": "A description for 'typeMismatch.java.util.Date'"
+  },
+  {
+    "name": "typeMismatch.usuario.birthDate",
+    "type": "java.lang.String",
+    "description": "A description for 'typeMismatch.usuario.birthDate'"
+  },
+  {
+    "name": "NotEmpty.user.country.codeCountry",
+    "type": "java.lang.String",
+    "description": "A description for 'NotEmpty.user.country.codeCountry'"
+  }
+]}

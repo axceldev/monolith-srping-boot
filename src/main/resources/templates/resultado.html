@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div class="mx-auto mt-3"  style="max-width: 30rem;">
+		<div class="card border-primary mb-3">
+			<div class="card-header font-weight-bold text-center">Información Usuario</div>
+			<div class="card-body">
+				<h5 class="card-title">1. Usuario:</h5>
+				<p class="font-weight-bold">1. Codigo Formulario: <span class="font-weight-light" th:text="${user.hiddenValue}"></span></p>
+				<p class="font-weight-bold">2. Nombre: <span class="font-weight-light" th:text="${user.name}"></span></p>
+				<p class="font-weight-bold">3. Apellido: <span class="font-weight-light" th:text="${user.lastName}"></span></p>
+				<p class="font-weight-bold">4. Fecha nacimiento: <span class="font-weight-light" th:text="${#dates.format(user.birthDate, 'yyyy-MM-dd')}"></span></p>
+				<p class="font-weight-bold">5. Genero: <span class="font-weight-light" th:text="${user.gender.nameGender}"></span></p>
+				<p class="font-weight-bold">6. Usuario: <span class="font-weight-light" th:text="${user.username}"></span></p>
+				<p class="font-weight-bold">7. Contraseña: <span class="font-weight-light" th:text="${user.password}"></span></p>
+				<p class="font-weight-bold">8. Correo: <span class="font-weight-light" th:text="${user.email}"></span></p>
+				<p class="font-weight-bold">9. Identificación: <span class="font-weight-light" th:text="${user.identification}"></span></p>
+				<p class="font-weight-bold">10. Cuenta: <span class="font-weight-light" th:text="${user.account}"></span></p>
+				<p class="font-weight-bold">11. #Pais: <span class="font-weight-light" th:text="${user.country.idCountry}"></span></p>
+				<p class="font-weight-bold">12. Codigo Pais: <span class="font-weight-light" th:text="${user.country.codeCountry}"></span></p>
+				<p class="font-weight-bold">13. Nombre Pais: <span class="font-weight-light" th:text="${user.country.nameCountry}"></span></p>
+				<p class="font-weight-bold">14. Estado: <span class="font-weight-light" th:text="${user.enableBool} ? 'Activo' : 'Inactivo'"></span></p>
+				<h5 class="card-title">2. Roles:</h5>
+				<ul>
+					<li th:each=" rol : ${ user.roles }" th:text="${rol.idRole} + ' - ' + ${rol.nameRole}"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
